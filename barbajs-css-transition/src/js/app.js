@@ -36,6 +36,11 @@ barba.init({
       to: { namespace: ['with-cover'] },
       leave() {},
       enter() {},
-    },
+    },{
+      name: 'clip-bottom',
+      to: {namespace: ['home']},
+      leave() {},
+      enter(){},
+    }
   ],
 });
