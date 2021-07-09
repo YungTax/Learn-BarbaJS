@@ -4,8 +4,10 @@
 @import 'fade.scss';
 @import 'clip.scss';
 @import 'with-cover.scss';
+@import 'clip-bottom.scss';
 @import 'utils.scss';
 @import 'fade-in.scss';
+
 :root {
   --easing: cubic-bezier(0.5, 0.7, 0.4, 1);
 }

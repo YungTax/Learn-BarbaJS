@@ -39,19 +39,18 @@ barba.init({
     },{
       name: 'clip-bottom',
       sync: true,
-      to: {namespace: ['home']},
+      to: {namespace: ['clip-bottom']},
       leave() {},
       enter(){},
     },{
-      name: 'fade-up',
-      sync: false,
-      to: {namespace:['fade-up']},
+      name: 'fade-in',
+      to: {namespace:['fade-in']},
       leave(){},
       enter(){},
     },{
-      name: 'fade-in',
+      name: 'fade-up',
       sync: true,
-      to: {namespace: ['fade-in']},
+      to: {namespace: ['fade-up']},
       leave(){},
       enter(){},
     }

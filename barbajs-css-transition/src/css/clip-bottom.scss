@@ -1,0 +1,26 @@
+/* Clip-path transition */
+.clip-bottom-enter {
+  clip-path: circle(0%);
+}
+
+.clip-bottom-enter-active {
+  transition: all 0.75s var(--easing);
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+.clip-bottom-enter-to {
+  clip-path: circle(90%);
+}
+
+.clip-bottom-leave {
+  opacity: 1;
+}
+
+.clip-bottom-leave-active {
+  transition: all 0.75s var(--easing);
+}
+
+.clip-bottom-leave-to {
+  opacity: 0;
+}
