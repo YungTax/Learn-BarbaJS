@@ -1,25 +1,25 @@
 /* Fade out current container */
-.fade-in-leave {
+.fade-up-leave {
   opacity: 1;
 }
 
-.fade-in-leave-active {
+.fade-up-leave-active {
   transition: opacity 0.3s linear;
 }
 
-.fade-in-leave-to {
+.fade-up-leave-to {
   opacity: 0;
 }
 
 /* Fade in the next container */
-.fade-in-enter {
+.fade-up-enter {
   opacity: 0;
 }
 
-.fade-in-enter-active {
+.fade-up-enter-active {
   transition: opacity 0.3s linear;
 }
 
-.fade-in-enter-to {
+.fade-up-enter-to {
   opacity: 1;
 }

@@ -1,9 +1,9 @@
 import barba from '@barba/core';
 import barbaCss from '@barba/css';
 
+
 // tell Barba to use the css plugin
 barba.use(barbaCss);
-
 const body = document.querySelector('body');
 
 barba.hooks.before((data) => {
@@ -40,11 +40,11 @@ barba.init({
       name: 'clip-bottom',
       sync: true,
       to: {namespace: ['clip-bottom']},
-      leave() {},
+      leave(){},
       enter(){},
     },{
       name: 'fade-in',
-      to: {namespace:['fade-in']},
+      to: {namespace: ['fade-in']},
       leave(){},
       enter(){},
     },{

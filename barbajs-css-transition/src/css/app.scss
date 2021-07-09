@@ -5,8 +5,10 @@
 @import 'clip.scss';
 @import 'with-cover.scss';
 @import 'clip-bottom.scss';
-@import 'utils.scss';
 @import 'fade-in.scss';
+@import 'fade-up.scss';
+@import 'utils.scss';
+
 
 :root {
   --easing: cubic-bezier(0.5, 0.7, 0.4, 1);
@@ -86,17 +88,19 @@ header {
     background-color: #6fe6bc;
   }
 
-  &.is-clip-bottom {
-    background-color: #ee5497;
-  }
-
   &.is-fade-in {
-    background: #96ee5c;
+    background-color: #96ee5c;
   }
 
   &.is-fade-up {
     background-color: #d6e66f;
   }
+
+  &.is-clip-bottom {
+    background-color: #ee5497;
+  }
+
+
 }
 
 
@@ -117,7 +121,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateY(-100%);
+  transform: translateY(100%);
   z-index: 1;
 
   >h2 {
