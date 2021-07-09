@@ -23,7 +23,7 @@ barba.init({
     }, {
       name: 'fade',
       to: { namespace: ['fade'] },
-      leave() {},
+      leave() {},    
       enter() {},
     }, {
       name: 'clip',
@@ -38,9 +38,23 @@ barba.init({
       enter() {},
     },{
       name: 'clip-bottom',
+      sync: true,
       to: {namespace: ['home']},
       leave() {},
       enter(){},
+    },{
+      name: 'fade-up',
+      sync: false,
+      to: {namespace:['fade-up']},
+      leave(){},
+      enter(){},
+    },{
+      name: 'fade-in',
+      sync: true,
+      to: {namespace: ['fade-in']},
+      leave(){},
+      enter(){},
     }
+  
   ],
 });

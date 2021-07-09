@@ -5,7 +5,7 @@
 @import 'clip.scss';
 @import 'with-cover.scss';
 @import 'utils.scss';
-
+@import 'fade-in.scss';
 :root {
   --easing: cubic-bezier(0.5, 0.7, 0.4, 1);
 }
@@ -28,6 +28,9 @@ h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
 }
+
+
+
 
 header {
   --base-color: #fff;
@@ -60,7 +63,7 @@ header {
     display: inline-block;
     text-align: center;
     color: var(--base-color);
-    border: 3px solid  var(--base-color);
+    border: 3px solid var(--base-color);
     border-radius: 10px;
     text-decoration: none;
   }
@@ -80,7 +83,21 @@ header {
   &.is-cover {
     background-color: #6fe6bc;
   }
+
+  &.is-clip-bottom {
+    background-color: #ee5497;
+  }
+
+  &.is-fade-in {
+    background: #96ee5c;
+  }
+
+  &.is-fade-up {
+    background-color: #d6e66f;
+  }
 }
+
+
 
 .content {
   transition: all 0.3s ease-out;
@@ -101,7 +118,7 @@ header {
   transform: translateY(-100%);
   z-index: 1;
 
-  > h2 {
+  >h2 {
     font-size: 40px;
     color: var(--base-color);
   }

@@ -1,0 +1,27 @@
+/* Clip transition */
+.fade-in-enter {
+  clip-path: circle(0%);
+}
+
+.fade-in-active {
+  transition: all 0.75s var(--easing);
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.fade-in-to {
+  clip-path: circle(75%);
+}
+
+.fade-in-leave {
+  opacity: 1;
+}
+
+.fade-in-active {
+  transition: all 0.75s var(--easing);
+}
+
+.fade-in-to {
+  opacity: 0;
+}
